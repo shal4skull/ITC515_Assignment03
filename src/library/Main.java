@@ -33,7 +33,7 @@ public class Main implements IMainListener {
 		printer = new Printer();
 		display = new Display();
 		
-		//setupTestData();
+		setupTestData();
 	}
 
 
