@@ -1,4 +1,4 @@
-package library.entities;
+package library;
 
 import library.interfaces.entities.EBookState;
 import library.interfaces.entities.IBook;
