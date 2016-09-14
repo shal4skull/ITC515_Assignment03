@@ -14,7 +14,7 @@ implements IBook {
     private String callNumber;
     private int id;
     private ILoan loan;
-    private EBookState state;
+    public EBookState state;
 
     public Book(String author, String title, String callNumber, int bookID) {
         if (!this.sane(author, title, callNumber, bookID)) {
