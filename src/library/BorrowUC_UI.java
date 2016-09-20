@@ -22,6 +22,7 @@ import library.panels.borrow.SwipeCardPanel;
 public class BorrowUC_UI
 extends JPanel
 implements IBorrowUI {
+	int i;
     private static final long serialVersionUID = 1;
     private IBorrowUIListener listener;
     private EBorrowState state;
@@ -30,7 +31,9 @@ implements IBorrowUI {
 
     public BorrowUC_UI(IBorrowUIListener listener) {
         this.listener = listener;
+        
         this.panels = new HashMap<EBorrowState, IBorrowUI>();
+        
         this.setLayout(new CardLayout());
         this.addPanel(new SwipeCardPanel(listener), EBorrowState.INITIALIZED);
         this.addPanel(new ScanningPanel(listener), EBorrowState.SCANNING_BOOKS);
