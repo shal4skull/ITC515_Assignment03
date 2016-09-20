@@ -12,9 +12,9 @@ public class Book implements IBook {
 	private String callNumber;
 	private int id;
 	
-	private ILoan loan;
+	//private ILoan loan;
 	//private EBookState state;
-	
+	public ILoan loan;
 	public EBookState state;
 	
 	
