@@ -29,7 +29,7 @@ implements ICardReader {
     private static final long serialVersionUID = 1;
     private JTextField textField;
     private JButton btnReadCard;
-    private ICardReaderListener listener;
+    public ICardReaderListener listener;
 
     public CardReader() {
         this.setTitle("Card Reader");
@@ -78,7 +78,7 @@ implements ICardReader {
                     CardReader.this.listener.cardSwiped(memberId);
                 }
                 catch (NumberFormatException e) {
-                    lblErrorMesg.setText("Member Id must be a positive intger");
+                    lblErrorMesg.setText("Member Id must be a positive integer");
                 }
                 CardReader.this.textField.setText("");
             }
