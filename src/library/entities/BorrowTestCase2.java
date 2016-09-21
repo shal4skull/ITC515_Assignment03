@@ -11,7 +11,7 @@ import org.junit.Test;
 import library.interfaces.entities.EBookState;
 
 public class BorrowTestCase2 {
-
+	
 	@Before
 	public void setUp() throws Exception {
 	}
@@ -26,9 +26,11 @@ public class BorrowTestCase2 {
 		Date d = new Date(2);
 		Loan LoanA = new Loan(a, b, c, d);
 		// Test if the book has been borrowed.
-		a.state = EBookState.ON_LOAN;
 		a.borrow(LoanA);
+		// The result returns true.
 		assertEquals(EBookState.ON_LOAN, a.getState());
+		// Show RuntimeException.
+		a.borrow(LoanA);
 	}
 
 }
