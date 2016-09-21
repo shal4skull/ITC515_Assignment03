@@ -8,8 +8,6 @@ import java.util.Date;
 import org.junit.Before;
 import org.junit.Test;
 
-import library.interfaces.entities.EBookState;
-
 public class BorrowTestCase3 {
 
 	@Before
