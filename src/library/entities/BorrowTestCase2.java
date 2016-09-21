@@ -35,4 +35,4 @@ public class BorrowTestCase2 {
 
 }
 
-//The result returns RuntimeException which is expected.
+// The result returns RuntimeException which is expected.
