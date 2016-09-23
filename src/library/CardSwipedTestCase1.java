@@ -25,8 +25,10 @@ public class CardSwipedTestCase1 {
 	}
 
 	// This test is BBUC_Op2: Swipe Borrower Card. 
+	// Testing preConditions.
 	@Test
 	public void testCardSwiped() {
+		
 		// Create a BorrowUC_CTL object.
 		CardReader reader = new CardReader();
 		Scanner scanner = new Scanner();
